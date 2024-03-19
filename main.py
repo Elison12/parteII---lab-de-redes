@@ -12,10 +12,22 @@ def testeDeServidor():
     conexao.close()
     
     if resposta.status == 200:
-        print(conteudo)
+        print("A página web está Funcionando !")
+        # print(conteudo)
     else:
         print("error")
 
 if __name__ == "__main__":
- 
-    testeDeServidor()
+    
+
+    print("Bem vindo ao menu de testes\n")
+    print("Para saber se página web está funcionando digite a senha. Dica: número de copas do mundo da seleção brasileira\n")
+    while(True):
+        senha = input()
+        if (senha == '5'):
+            print("Senha correta! aguardando resposta...\n")
+            testeDeServidor()
+            break
+        else:
+            print("Senha incorreta\n")
+
