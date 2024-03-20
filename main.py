@@ -1,7 +1,10 @@
 import http.client
 
 def testeDeServidor():
-    conexao = http.client.HTTPConnection('localhost', 8080)
+    """
+    testar conexão
+    """
+    conexao = http.client.HTTPConnection('www.exemplo.psi', 8080)
     
     conexao.request('GET', '/index.html')
     
